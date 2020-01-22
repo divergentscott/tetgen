@@ -17,6 +17,7 @@
 
 #include "tetgen.h"
 
+
 //// io_cxx ///////////////////////////////////////////////////////////////////
 ////                                                                       ////
 ////                                                                       ////
@@ -12432,8 +12433,8 @@ void tetgenmesh::incrementaldelaunay(clock_t& tv)
         swapvertex = org(searchtet);
         if (b->object != tetgenbehavior::STL) {
           if (!b->quiet) {
-            printf("Warning:  Point #%d is coincident with #%d. Ignored!\n",
-                   pointmark(permutarray[i]), pointmark(swapvertex));
+            //printf("Warning:  Point #%d is coincident with #%d. Ignored!\n",
+            //       pointmark(permutarray[i]), pointmark(swapvertex));
           }
         }
         setpoint2ppt(permutarray[i], swapvertex);
